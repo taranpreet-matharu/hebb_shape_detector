@@ -42,22 +42,44 @@ project-folder/
 
 ## 📦 Requirements
 
-**Python 3.9+** recommended.
+### 1. Python version
 
-Install packages:
+Make sure you have **Python 3.9+** installed.
+
+You can check your version:
+
+```bash
+python --version
+```
+
+---
+
+### 2. Install dependencies
+
+First, create a **virtual environment** (recommended):
+
+```bash
+python -m venv venv
+```
+
+Activate it:
+
+**Windows (PowerShell)**:
+
+```powershell
+venv\Scripts\activate
+```
+
+**Mac/Linux**:
+
+```bash
+source venv/bin/activate
+```
+
+Then install all required packages:
 
 ```bash
 pip install -r requirements.txt
-```
-
-**requirements.txt**
-
-```
-streamlit>=1.33.0
-opencv-python>=4.9.0.80
-numpy>=1.26.4
-pandas>=2.2.2
-Pillow>=10.3.0
 ```
 
 ---
@@ -89,31 +111,6 @@ streamlit run app.py
   rectangle_12_1.bmp
   triangle_03_-1.bmp
   ```
-- `common.py` must define:
-
-  ```python
-  def calculate_output(matrix, weights, bias_weight):
-      # Weighted sum + bias
-
-  def calc_bipolar_activation(value):
-      # Returns 1 or -1
-  ```
-
----
-
-## 📷 Screenshots
-
-### Main Interface
-
-![Main UI Screenshot](screenshots/main_ui.png)
-
-### Training Results
-
-![Training Results Screenshot](screenshots/training_results.png)
-
-### Predictions
-
-![Prediction Screenshot](screenshots/predictions.png)
 
 ---
 
